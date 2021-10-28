@@ -1,0 +1,53 @@
+/* Element Selectors */
+
+body {
+    /* This would give the margin all around a 2% space */
+    margin: 2%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* Changes the background color of the headings and centers to the web page */
+    background-color: orangered;
+    text-align: center;
+}
+
+h3 {
+    /* Changes the font color to a chocolate tone */
+    color: chocolate;
+}
+
+p {
+    /* All the p selectors will change to a font color of maroon and get the specific font family */
+    color: maroon;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    /* this will center the image to the browser */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    /* this will center the table to the browser */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead {
+    /* the content in the thead will get aligned and get the font color of red */
+    text-align: center;
+    color: red;
+}
+
+tbody {
+    /* the content in the tbody font color of purple */
+    color: purple;
+}
+
+/* Class Selectors */
+.redText {
+    /* the elements with the class of redText will get the below changes */
+    color: red;
+}

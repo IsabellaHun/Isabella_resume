@@ -1,0 +1,375 @@
+/****************** GENERAL ******************/
+/**** Element Selectors ****/
+html, body {
+    /* making sure that the website always takes up all the space of the browser window */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+span {
+    /* styling for the text between the span */
+    color: #F21170;
+    text-shadow: 1px 1px #eb4389;
+}
+
+h1 {
+    font-size: 40px;
+    color: #252934;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: #252934;
+}
+
+h3 {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: #04c2c9;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+img {
+    height: auto;
+    border-radius: 500px;
+    margin-top: 30px;
+    max-width: 100%;
+    box-shadow: 3px 3px 4px #252934;
+}
+
+hr {
+    border: 3px solid #252934;
+    border-radius: 10px;
+    width: 5%;
+}
+
+/****************** HOME PAGE ******************/
+
+/**** Element Selectors ****/
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    /* removes the bullets from the list */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* changes the background color of the navbar */
+    background-color: #1b242f;
+}
+
+li {
+    /* will make the nav items in the list be next to one another */
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 0.6s;
+}
+
+li:hover {
+    /* the font color will change when you hover over an item */
+    background-color: #F21170;
+}
+
+li a {
+    /* display block will allow us to play around with the padding, margin etc... */
+    display: block;
+    /* changes text color to white */
+    color: white;
+    /* adds padding so the list irems aren't to close to each other */
+    padding: 12px 30px;
+    /* removes the underline from the text */
+    text-decoration: none;
+    /* aligns text to center*/
+    text-align: center;
+}
+
+/**** ID Selectors ****/
+#home {
+    height: 100%;
+    background-color: black;
+    position: relative;
+}
+
+/**** Class Selectors ****/
+/* INTRO CONTAINER */
+.intro {
+    /* Creating the layout of the home page content */
+    margin: auto;
+    width: 50%;
+    height: 30%;
+    padding: 10px;
+    text-align: center;
+    /* posisioning relative to it's parent element 'ID=home' */
+    position: absolute;
+    left: 25%;
+    top: 40%;
+}
+
+
+.intro p {
+    /* Styling the paragraph in the intro class */
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* INTRO CONTAINER BUTTON */
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    padding: 12px;
+    /* creating a border to surround the button */
+    border: 2px solid #fff;
+    /* creates a shadow around the button */
+    box-shadow: 2px 2px 4px #04c2c9;
+    /* smoothly transitions the button to the color on the hover action */
+    transition-duration: 0.7s;
+}
+
+.btn:hover {
+    background-color: #04c2c9;
+    border: 2px solid #04c2c9;
+}
+
+.btn a {
+    /* removing the underline and text color of the link in the button */
+    text-decoration: none;
+    color: #fff;
+}
+
+/****************** ABOUT PAGE ******************/
+
+/**** Element Selectors ****/
+/* TABLE */
+/* Creating some layout */
+table {
+    width: 100%;
+    height: 10%;
+}
+
+table td {
+    font-family: 'Roboto', sans-serif;
+}
+
+table i {
+    margin-top: 10%;
+}
+
+td {
+    /* aligns the content with td to the center and adding some padding */
+    text-align: center;
+    padding: 1.5%;
+}
+
+/**** ID Selectors ****/
+#about {
+    /* layout for about page */
+    margin: 5% 20% 5% 20%;
+}
+
+/**** Class Selectors ****/
+/* TABLE */
+.tIcon {
+    padding: 8%;
+    font-size: 100px;
+    color: #fff;
+    background-color: #04c2c9;
+    box-shadow: 2px 2px 4px #04c2c9;
+    /* adds rounding to the edges of the icon */
+    border-radius: 50px;
+}
+
+.tableHead {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* BELOW TABLE */
+.container {
+    /* flex will make sure that the contyent in the container takes up a whole line on it's own */
+    display: flex;
+    /* Align items to the center  */
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.image {
+    /* This will shrink or grow the image according to how big your browser window is */
+    flex-basis: 80%;
+}
+
+.text {
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+.text a {
+    color: #F21170;
+    text-decoration: none;
+    /* This will make the links in the text class italics */
+    font-style: italic;
+}
+
+.text p {
+    font-family: 'Raleway', sans-serif;
+}
+
+/****************** CONTACT PAGE ******************/
+
+/**** Element Selectors ****/
+/* FORM */
+form {
+    display: block;
+}
+
+input[type=text] {
+    /* styling the input type of 'text' */
+    width: 35%;
+    padding: 12px 20px;
+    margin-left: 32.5%;
+    margin-bottom: 5px;
+    background-color: #1e242c;
+    display: block;
+    border: 1px solid #1e242c;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+input[type=submit] {
+    /* stytling the input type of 'submit' */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #252934;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 10%;
+    margin-left: 57.5%;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 4px #04c2c9;
+    /* adding a transition for smooth change to the hover action */
+    transition-duration: 0.7s;
+    color: #fff;
+}
+
+input[type=submit]:hover {
+    background-color: #04c2c9;
+    border: 2px solid #04c2c9;
+    /* upon hover the cursor will become a pointer */
+    cursor: pointer;
+}
+
+/**** ID Selectors ****/
+/* ABOVE FORM */
+#contact {
+    background-color: #252934;
+    padding: 5% 10% 5% 10%;
+}
+
+#contact hr {
+    border: 3px solid #fff;
+}
+
+/* FORM */
+#message {
+    /* Will make the text box larger for the message thus visually appealing */
+    height: 150px;
+}
+
+/**** Class Selectors ****/
+/* ABOVE FORM */
+.contactHeading {
+    color: #fff;
+}
+
+/****************** FOOTER PAGE ******************/
+
+/**** Element Selectors ****/
+
+
+/**** ID Selectors ****/
+/* LAYOUT */
+#footer {
+    background-color: #1b242f;
+    padding: 5% 20% 2% 20%;
+    /* relative to it's normal position */
+    position: relative;
+}
+
+#footer p {
+    color: #8f9aa7;
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+/**** Class Selectors ****/
+/* BACK TO TOP BUTTON */
+.fa-arrow-up {
+    background-color: #F21170;
+    color: #fff;
+    box-shadow: 2px 2px 4px #eb4389;
+    font-size: 30pt;
+    padding-top: 2px;
+    height: 50px;
+    width: 3%;
+    /* specifies the height of the line */
+    line-height: 40pt;
+    transition-duration: 0.5s;
+    /* absolute to it's parent */
+    position: absolute;
+    /* will let the button/icon go over it's parent by using the negative amount */
+    top: -25px;
+    margin-left: 30%;
+    text-align: center;
+}
+
+.fa-arrow-up:hover {
+    background-color: #eb4389;
+}
+
+/* LINKS TO SOCIAL */
+.footerIcons {
+    font-size: 40px;
+    background-color: #252934;
+    color: #fff;
+    text-align: center;
+    padding: 1%;
+    margin-right: 2%;
+}
+
+.footerIcons:hover {
+    background-color: #1e242c;
+    transition-duration: 0.5s;
+}
+
+.footerContainer {
+    padding-left: 41.5%;
+}
+
+/****************** RESPONSIVE ******************/
+/* I wanted to add responsiveness, but I want to move on so I can do my Capstone project next week <3 */
